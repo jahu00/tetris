@@ -1,0 +1,52 @@
+/* Tetris styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(20, 30px);
+  gap: 1px;
+  border: 1px solid #000;
+}
+
+#preview {
+  display: grid;
+  grid-template-columns: repeat(4, 30px);
+  grid-template-rows: repeat(4, 30px);
+  gap: 1px;
+  border: 1px solid #000;
+}
+
+.container {
+  position: relative;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  font-weight: bold;
+  display: none;
+  color: blue;
+}
+
+.sidebar {
+  position: absolute;
+  left: 110%;
+  top: 0;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
