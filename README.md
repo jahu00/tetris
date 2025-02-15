@@ -1,12 +1,12 @@
 This is an experiment on AI generated code using RooCode with local Ollama.
 
 It tooke several evenings to set it up. It should work with any LLM as long as it has a big context and can follow instructions.
-In practice, if the model wasn't set up for a big context, it won't work properly. Success was achieved using qwen2.4-coder-cline.
+In practice, if the model wasn't set up for a big context, it won't work properly. Success was achieved using qwen2.5-coder-cline.
 LLM had to be given detailed description of how tetris works otherwise it would not implement any game logic.
 
 Possibly better models like phi4 showed promise (better results from simpler prompt), but would run out of context (even with manually forced bigger context, LLM would struggle to follow instructions
 past the recommended size).
-Even qwen2.4-coder-cline had some responses that RooCode failed to parse. However, it got past those on a repeated attempt. Additionally, when LLM achieved success, it kept recreating the same code
+Even qwen2.5-coder-cline had some responses that RooCode failed to parse. However, it got past those on a repeated attempt. Additionally, when LLM achieved success, it kept recreating the same code
 over and over again and had to be stopped manually.
 
 When all the stars alligned eventually, LLM produced code in some 5 minues. It had all of tetris logic implemented as per the prompt, but there were a number of minor bugs that had to be fixed by a human.
